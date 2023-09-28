@@ -53,7 +53,7 @@ std::int32_t main(std::int32_t argc, char const *argv[]) {
       do {
             
              /* Disassemble */
-             const auto dism = kosmic::lua::ver_5_3_6::disassemble(curr);
+             const auto dism = kosmic::lua::ver_5_2_4::disassemble(curr);
 
              /* Print proto information */
              std::printf("\n* function %" PRIuPTR " instructions\n", dism.size());

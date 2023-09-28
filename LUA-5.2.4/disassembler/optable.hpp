@@ -3,7 +3,7 @@
 #include <map>
 #include <vector>
 
-namespace kosmic::lua::ver_5_3_6::optable {
+namespace kosmic::lua::ver_5_2_4::optable {
 
      enum class operand_encoding {
             A,
@@ -170,4 +170,4 @@ namespace kosmic::lua::ver_5_3_6::optable {
           {OpCode::OP_EXTRAARG, {"OP_EXTRAARG", "extraarg", "Extra arg Ax for previous opcode.", {"src(Register)"}}}                                                                                                                                                                       /* 27 */
       };
 
-} // namespace kosmic::lua::ver_5_3_6::optable
+} // namespace kosmic::lua::ver_5_2_4::optable

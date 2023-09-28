@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-namespace kosmic::lua::ver_5_3_6 {
+namespace kosmic::lua::ver_5_2_4 {
 
       struct operand {
 
@@ -74,6 +74,6 @@ namespace kosmic::lua::ver_5_3_6 {
       void disassemble(const Proto *p, std::vector<std::shared_ptr<disassembly>> &buffer);
 
       /* Disassemble proto. */
-      std::vector<std::shared_ptr<kosmic::lua::ver_5_3_6::disassembly>> disassemble(const Proto *p);
+      std::vector<std::shared_ptr<kosmic::lua::ver_5_2_4::disassembly>> disassemble(const Proto *p);
 
-} // namespace kosmic::lua::ver_5_3_6
+} // namespace kosmic::lua::ver_5_2_4
