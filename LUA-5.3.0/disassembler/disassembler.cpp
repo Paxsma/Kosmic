@@ -208,7 +208,8 @@ void kosmic::lua::ver_5_3_0::disassemble(const std::uintptr_t addr, const Proto 
 
       /* Bytes */
       for (auto i = 0u; i < buffer->len; ++i)
-            buffer->bytes.emplace_back(p->code[buffer->addr + i]);
+            for (auto s = 0u; s < sizeof(Instruction); ++s)
+                  buffer->bytes.emplace_back((p->code[buffer->addr + i] >> (s * 8)) & 0xFF);
 
       return;
 }
